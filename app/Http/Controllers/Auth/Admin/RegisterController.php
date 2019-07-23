@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Auth\Admin;
 
 use App\Admin;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ class RegisterController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('admin.register');
+        return view('auth.admin.register');
     }
 
 

@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MultiAuthHomeController extends Controller
+class FrontendController extends Controller
 {
-    public function index(){
+    public function getIndex(){
         return view('welcome');
     }
 }

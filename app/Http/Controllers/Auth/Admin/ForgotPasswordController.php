@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Auth\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -25,7 +25,7 @@ class ForgotPasswordController extends Controller
 
     public function showLinkRequestForm()
     {
-        return view('admin.passwords.email');
+        return view('auth.admin.passwords.email');
     }
     /**
      * Send a reset link to the given user.
