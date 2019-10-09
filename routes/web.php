@@ -12,8 +12,6 @@
 */
 //frontend routes
 Route::get('/', 'FrontendController@getIndex')->name('/');
-Route::get('/check','AdminHomeController@check')->name('check');
-
 
 //admin routes
 Route::get('/admin','AdminHomeController@index')->name('admin');

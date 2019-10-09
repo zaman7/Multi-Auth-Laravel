@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admin;
 use Illuminate\Http\Request;
 
 class AdminHomeController extends Controller
@@ -23,10 +24,6 @@ class AdminHomeController extends Controller
      */
     public function index()
     {
-        return view('admin');
-    }
-    public function check()
-    {
-        return view('check');
+        return response()->json(Admin::all(),200);
     }
 }
