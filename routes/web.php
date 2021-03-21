@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //frontend routes
-Route::get('/', 'FrontendController@getIndex')->name('/');
+Route::get('/', 'FrontendController@getIndex');
 
 //admin routes
 Route::get('admin','AdminHomeController@index')->name('admin');

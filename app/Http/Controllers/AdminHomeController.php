@@ -24,6 +24,6 @@ class AdminHomeController extends Controller
      */
     public function index()
     {
-        return response()->json(Admin::all(),200);
+        return view('home');
     }
 }
